@@ -1,5 +1,15 @@
 # Postgres EF migration POC
 
+##How to use
+1. Once downloaded
+2. Delete the ``Migrations`` Folder
+3. Delete the ``Scripts`` Folder
+4. Execute the docker compose see below ``Docker Container``
+5. Do your initial migration see ``Add Migration File``
+6. Create your initial script see ``Add Migration Scrip``
+7. Update your Database see ``Update Database``
+8. Modify the Model and repeat step 5 - 7
+
 ## Packages
 - Npgsql.EntityFrameworkCore.Postgresql
 - Microsoft.EntityFrameworkCore.Design

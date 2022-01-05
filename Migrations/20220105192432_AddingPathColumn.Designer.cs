@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using document.DataContext;
@@ -11,9 +12,10 @@ using document.DataContext;
 namespace document.Migrations
 {
     [DbContext(typeof(DocumentDataContext))]
-    partial class DocumentDataContextModelSnapshot : ModelSnapshot
+    [Migration("20220105192432_AddingPathColumn")]
+    partial class AddingPathColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

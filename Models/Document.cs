@@ -12,4 +12,6 @@ public class Document
     public string DataJsonb { get; set; }
     
     public DateTime Created { get; set; }
+    
+    public  string Path { get; set; }
 }

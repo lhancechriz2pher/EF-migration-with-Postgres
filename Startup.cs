@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using document.DataContext;
 using document.Model;
 using document.Models;
+using document.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,7 +36,7 @@ namespace document
 
             services.AddDbContext<DocumentDataContext>(options =>
                 options.UseNpgsql(documentOptions.Get<DocumentDbOptions>().ConnectionString));
-            
+            services.AddScoped<IDocumentRepository, DocumentRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
