@@ -1,6 +1,6 @@
 # Postgres EF migration POC
 
-##How to use
+## How to use
 1. Once downloaded
 2. Delete the ``Migrations`` Folder
 3. Delete the ``Scripts`` Folder
@@ -56,7 +56,7 @@ Updates the database to the last migration or to a specified migration.
 
 
 
-##Reference
+## Reference
 
 dotnet-ef (https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
 
